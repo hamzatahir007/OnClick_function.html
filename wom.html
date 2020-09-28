@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<button onClick="window.alert('this is alert box')" >ALERT BOX</button>
+<button onClick="cnf()" >confirm BOX</button>
+<button onClick="ok()" >Prompt BOX</button>
+<script>
+function cnf(){
+	
+	var text = confirm("would you like to leave or not");
+	if(text == true ){
+		
+		document.write("you choose OK");
+		return true;
+		}
+		else{
+			document.write("you want to LEAVE");
+			return false;
+		}
+	
+}
+
+
+function ok(){
+	
+	var ab = prompt("enter your name", "like Jhon");
+	
+	if(ab == "benchmark"){
+		window.location = "operators.html";
+	}
+	else{
+		document.write("ERROR");
+	}
+	
+	
+}
+</script>
+</body>
+</html>
